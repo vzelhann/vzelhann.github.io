@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vzelita Hannisa | Sharia Financial Management Graduate</title>
+<meta name="description" content="Portfolio of Vzelita Hannisa: accounting internships in insurance and commodity export, insurance financial performance research (RBC, Underwriting Ratio, ROA), and data analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F7F4; --surface:#FFFFFF; --ink:#16201D; --muted:#55645F; --line:#D5DBD6;
+  --accent:#0D5C4F; --accent-ink:#FFFFFF; --brass:#9A7424;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121917; --surface:#1A2421; --ink:#E8EEEA; --muted:#A3B1AB; --line:#2E3B37;
+    --accent:#5CC2AE; --accent-ink:#0C1412; --brass:#D1A64A;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+/* header */
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+.brand{font-family:var(--serif);font-weight:600;font-size:1.2rem;text-decoration:none;color:var(--ink)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:500}
+nav a:hover{color:var(--accent)}
+
+/* hero */
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.4rem,5.4vw,4rem);line-height:1.06;margin:0 0 20px;letter-spacing:-.01em}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border-radius:4px;font-weight:600;font-size:.95rem;text-decoration:none;border:1.5px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent);background:transparent}
+.btn:hover{opacity:.88}
+
+/* ledger: the memorable element */
+.ledger{background:var(--surface);border:1px solid var(--line);padding:26px 28px;font-variant-numeric:tabular-nums}
+.ledger h2{font-family:var(--serif);font-size:1.05rem;font-weight:600;margin:0 0 14px;padding-bottom:10px;border-bottom:1px solid var(--ink)}
+.ledger dl{margin:0}
+.ledger .row{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px dotted var(--line);font-size:.97rem}
+.ledger dt{color:var(--muted)}
+.ledger dd{margin:0;font-weight:600;text-align:right}
+.ledger .total{display:flex;justify-content:space-between;gap:16px;margin-top:14px;padding-top:12px;border-top:1px solid var(--ink);font-weight:600}
+.ledger .total span:last-child{border-bottom:4px double var(--ink);padding-bottom:2px}
+
+/* sections */
+section.block{padding:56px 0;border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:200px 1fr;gap:40px}
+h2.title{font-family:var(--serif);font-weight:600;font-size:1.6rem;margin:0;line-height:1.2;position:sticky;top:24px;align-self:start}
+.entry{margin-bottom:36px}
+.entry:last-child{margin-bottom:0}
+.entry h3{font-family:var(--serif);font-size:1.3rem;font-weight:600;margin:0 0 2px;line-height:1.3}
+.entry .meta{color:var(--muted);font-size:.95rem;margin:0 0 12px}
+.entry ul{margin:0;padding-left:1.1rem}
+.entry li{margin-bottom:6px}
+p{margin:0 0 14px;max-width:38em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;padding:0;list-style:none}
+.tags li{border:1px solid var(--line);background:var(--surface);padding:4px 12px;border-radius:999px;font-size:.88rem;margin:0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.skills h3{font-family:var(--serif);font-size:1.1rem;margin:0 0 8px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.skills ul{margin:0;padding-left:1.1rem}
+.skills li{margin-bottom:4px}
+
+footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:820px){
+  .hero{padding:48px 0 40px}
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .grid{grid-template-columns:1fr;gap:18px}
+  h2.title{position:static}
+  nav ul{gap:16px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Vzelita Hannisa</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <h1 id="hero-title">Accounting and financial analysis, grounded in Sharia finance.</h1>
+        <p class="lead">I’m Vzelita Hannisa, a Sharia Financial Management graduate with accounting internship experience in the insurance and commodity export sectors, and research on insurance financial performance.</p>
+        <div class="btns">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="cv.pdf">Download CV</a>
+        </div>
+      </div>
+
+      <aside class="ledger" aria-label="Summary at a glance">
+        <h2>At a glance</h2>
+        <dl>
+          <div class="row"><dt>Degree</dt><dd>Sharia Financial Management</dd></div>
+          <div class="row"><dt>University</dt><dd>UIN Sunan Gunung Djati Bandung</dd></div>
+          <div class="row"><dt>Internships</dt><dd>Insurance, commodity export</dd></div>
+          <div class="row"><dt>Publication</dt><dd>ICIE 2024</dd></div>
+          <div class="row"><dt>Tools</dt><dd>Excel, SPSS, Gretl, EViews</dd></div>
+        </dl>
+        <div class="total"><span>GPA</span><span>3.92 / 4.00</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="block" id="about" aria-labelledby="about-t">
+    <div class="wrap grid">
+      <h2 class="title" id="about-t">About</h2>
+      <div>
+        <p>I graduated from UIN Sunan Gunung Djati Bandung with a GPA of 3.92/4.00. I’ve worked on recording and verifying transactions, bank reconciliation, and financial reporting support in two companies, and I’ve done quantitative research on how capital strength and underwriting performance relate to profitability in insurance.</p>
+        <p>I’m looking to grow in accounting, finance, financial analysis, and data analysis. This portfolio documents my work, projects, and continuing learning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience" aria-labelledby="exp-t">
+    <div class="wrap grid">
+      <h2 class="title" id="exp-t">Experience</h2>
+      <div>
+        <article class="entry">
+          <h3>Accounting Intern</h3>
+          <p class="meta">PT Asuransi Bhakti Bhayangkara | Jan – Feb 2025</p>
+          <ul>
+            <li>Recorded and verified monthly financial data for the head office and 5+ branch offices.</li>
+            <li>Calculated premium reserve accounts and prepared reconciliation reports covering premiums, claims, and technical reserves.</li>
+            <li>Processed 50+ claim payment vouchers to support financial reporting to OJK.</li>
+            <li>Performed 11 months of bank reconciliation to keep accounting records consistent with bank statements and support the audit process.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <h3>Accounting Intern</h3>
+          <p class="meta">PT Imela Jaya Bersama | May – Jul 2023</p>
+          <ul>
+            <li>Verified and recorded 400+ operational transactions (Direct Cost, Fixed Cost, Marketing Cost) with the corresponding general journal entries in Microsoft Excel.</li>
+            <li>Managed General Cash and Petty Cash records in parallel and checked supporting documents for each transaction.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <h3>Workshop on MSME Digitalization</h3>
+          <p class="meta">Social &amp; Economic Division, Community Service Program (KKN) | 2025</p>
+          <ul>
+            <li>Initiated a QRIS and digital marketing workshop for 30+ participants from 50+ assisted MSMEs, in collaboration with Dinas Koperasi dan UKM and 3 KKN groups.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="research" aria-labelledby="res-t">
+    <div class="wrap grid">
+      <h2 class="title" id="res-t">Research</h2>
+      <div>
+        <article class="entry">
+          <h3>The Effect of Risk-Based Capital (RBC) and Underwriting Ratio on Return on Assets (ROA) at PT Asuransi Bhakti Bhayangkara (2020–2024)</h3>
+          <p class="meta">Undergraduate thesis | 2026</p>
+          <ul>
+            <li>Analyzed 60 financial data observations across 5 years using multiple linear regression in SPSS and Gretl, with an Adjusted R² of 57.2%.</li>
+            <li>Conducted in-depth interviews with relevant divisions to validate the quantitative findings, using a mixed-methods approach.</li>
+            <li>Interpreted the results from an Islamic business ethics perspective.</li>
+          </ul>
+          <ul class="tags" aria-label="Methods and tools">
+            <li>Risk-Based Capital</li>
+            <li>Underwriting Ratio</li>
+            <li>Return on Assets</li>
+            <li>Multiple linear regression</li>
+            <li>SPSS</li>
+            <li>Gretl</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <h3>Gender disparities in human development in Indonesia</h3>
+          <p class="meta">Second author | The 1st International Conference on Islamic Economics (ICIE), 2024</p>
+          <ul>
+            <li>Contributed to the analysis and writing of a research article using A/B Testing, Composite Scoring, and K-Means Clustering.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="skills" aria-labelledby="sk-t">
+    <div class="wrap grid">
+      <h2 class="title" id="sk-t">Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Accounting and finance</h3>
+          <ul>
+            <li>Transaction recording</li>
+            <li>General journal</li>
+            <li>Cash management</li>
+            <li>Bank reconciliation</li>
+            <li>Financial data verification</li>
+            <li>Financial reporting support</li>
+            <li>Taxation basics</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Data analysis</h3>
+          <ul>
+            <li>Multiple linear regression</li>
+            <li>K-Means clustering</li>
+            <li>A/B testing and composite scoring</li>
+            <li>Insurance ratios (RBC, Underwriting, ROA)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            <li>Microsoft Excel and Office</li>
+            <li>Google Workspace</li>
+            <li>SPSS, EViews, Gretl</li>
+            <li>Canva</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="education" aria-labelledby="ed-t">
+    <div class="wrap grid">
+      <h2 class="title" id="ed-t">Education</h2>
+      <div>
+        <article class="entry">
+          <h3>Bachelor of Sharia Financial Management</h3>
+          <p class="meta">UIN Sunan Gunung Djati Bandung | 2022 – 2026 | GPA 3.92 / 4.00</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact" aria-labelledby="ct-t">
+    <div class="wrap grid">
+      <h2 class="title" id="ct-t">Contact</h2>
+      <div>
+        <p>I’m open to opportunities in accounting, finance, and data analysis. The quickest way to reach me is by email.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:vzelitahannisa19@gmail.com">Send an email</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/vzelitahannisa">LinkedIn profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Vzelita Hannisa</span>
+    <span>Bekasi, Indonesia</span>
+  </div>
+</footer>
+<script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
