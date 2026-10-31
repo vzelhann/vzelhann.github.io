@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vzelita Hannisa | Accounting and Finance</title>
+<meta name="description" content="Portfolio of Vzelita Hannisa, Sharia Financial Management graduate: accounting internships, an insurance thesis on capital, underwriting and profitability, and certifications.">
+<link rel="preload" href="Eczar-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{
+  font-family:"Eczar";
+  src:url("Eczar-Variable.woff2") format("woff2");
+  font-weight:400 800;
+  font-style:normal;
+  font-display:swap;
+}
+:root{
+  --bg:#F3FBF8; --surface:#FFFFFF; --ink:#0F2A2E; --muted:#47605F; --line:#CDE6DF;
+  --accent:#00796B; --accent-ink:#FFFFFF; --coral:#FF6F4D; --sun:#FFC83D; --soft:#DDF5EE;
+  --hero:linear-gradient(135deg,#D9F6EE 0%,#FFF3CF 100%);
+  --font:"Eczar",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0C1D1F; --surface:#142A2C; --ink:#EAF6F2; --muted:#A5BFBA; --line:#244043;
+    --accent:#4FD6C0; --accent-ink:#06201C; --coral:#FF8A6B; --sun:#FFD86B; --soft:#1B3A3C;
+    --hero:linear-gradient(135deg,#123433 0%,#2A2A14 100%);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.7 var(--font)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+header.top{background:var(--surface);border-bottom:3px solid var(--sun);position:sticky;top:0;z-index:5}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.brand{font-weight:700;font-size:1.3rem;text-decoration:none;color:var(--ink)}
+nav ul{display:flex;gap:6px 20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:1rem;font-weight:500}
+nav a:hover{color:var(--accent)}
+
+.hero{background:var(--hero);padding:56px 0 60px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
+.me{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.me img{width:92px;height:92px;border-radius:50%;object-fit:cover;border:4px solid var(--surface);box-shadow:0 0 0 3px var(--coral)}
+.me span{font-weight:600;color:var(--accent)}
+h1{font-weight:700;font-size:clamp(2.1rem,4.6vw,3.3rem);line-height:1.12;margin:0 0 18px}
+.lead{font-size:1.12rem;color:var(--muted);margin:0 0 26px;max-width:32em}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent);background:var(--surface)}
+.btn:hover{filter:brightness(1.08)}
+
+.viewer{background:var(--surface);border:1px solid var(--line);border-top:6px solid var(--coral);border-radius:10px;padding:20px;box-shadow:0 10px 30px rgba(0,121,107,.12)}
+.viewer h2{font-weight:700;font-size:1.15rem;line-height:1.35;margin:0 0 12px}
+.viewer figure{margin:0}
+.stage{background:#fff;border-radius:6px;border:1px solid var(--line);padding:6px;height:260px;display:flex;align-items:center;justify-content:center}
+.stage img{max-height:100%;width:auto;object-fit:contain}
+.viewer figcaption{margin-top:12px;font-size:1rem;line-height:1.5;min-height:3.4em}
+.viewer figcaption strong{display:block;color:var(--accent)}
+.thumbs{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.thumbs button{width:56px;height:44px;padding:2px;border:2px solid var(--line);background:#fff;border-radius:6px;cursor:pointer}
+.thumbs button img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+.thumbs button[aria-pressed="true"]{border-color:var(--coral)}
+
+section.block{padding:56px 0}
+section.block:nth-of-type(even){background:var(--surface)}
+.grid{display:grid;grid-template-columns:190px 1fr;gap:36px}
+h2.title{font-weight:700;font-size:1.7rem;margin:0;line-height:1.2;align-self:start;position:sticky;top:84px}
+h2.title::after{content:"";display:block;width:44px;height:4px;background:var(--coral);margin-top:10px;border-radius:2px}
+p{margin:0 0 14px;max-width:40em}
+.entry{margin-bottom:38px}
+.entry:last-child{margin-bottom:0}
+.entry h3{font-weight:700;font-size:1.3rem;margin:0 0 2px;line-height:1.35}
+.entry .meta{color:var(--muted);font-size:.98rem;margin:0 0 12px}
+.entry ul{margin:0;padding-left:1.1rem}
+.entry li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0!important;padding:0!important;list-style:none}
+.tags li{background:var(--soft);color:var(--ink);padding:2px 12px;border-radius:999px;font-size:.92rem;margin:0}
+.photo{margin:16px 0 0;max-width:420px}
+.photo img{border-radius:8px;border:1px solid var(--line)}
+.photo figcaption{font-size:.92rem;color:var(--muted);margin-top:6px}
+.photo.small{max-width:300px}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:22px}
+.stat{background:var(--soft);border-radius:10px;padding:14px 16px}
+.stat b{display:block;font-weight:700;font-size:1.7rem;line-height:1.15;color:var(--accent)}
+.stat span{font-size:.95rem;line-height:1.4;color:var(--muted);display:block}
+.stat.gpa{background:var(--sun);color:#1c1a0e}
+.stat.gpa b{color:#1c1a0e}.stat.gpa span{color:#3b3414}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:16px 18px}
+section.block:nth-of-type(even) .card{background:var(--bg)}
+.card:nth-child(2n){border-left-color:var(--coral)}
+.card:nth-child(3n){border-left-color:var(--sun)}
+.card h3{font-weight:700;font-size:1.08rem;margin:0 0 4px;line-height:1.35}
+.card .meta{font-size:.92rem;line-height:1.5;color:var(--muted);margin:0 0 6px}
+.card p{font-size:1rem;line-height:1.55;margin:0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px}
+.skills h3{font-weight:700;font-size:1.15rem;margin:0 0 8px;border-bottom:2px solid var(--sun);padding-bottom:6px}
+.skills ul{margin:0;padding-left:1.1rem}
+.skills li{margin-bottom:4px}
+
+h4{font-weight:700;font-size:1.1rem;margin:28px 0 8px}
+.scroll{overflow-x:auto;margin:0 0 10px}
+.tbl{border-collapse:collapse;width:100%;font-size:.95rem;line-height:1.45}
+.tbl caption{text-align:left;color:var(--muted);padding-bottom:6px}
+.tbl th,.tbl td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{background:var(--soft);font-weight:700}
+.note{color:var(--muted);font-size:.95rem}
+.pubviewer{margin-top:18px;max-width:560px}
+.viewer figcaption{min-height:5.2em}
+footer{background:var(--ink);color:#DDEBE7;padding:28px 0 40px;font-size:.98rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .hero{padding:40px 0}
+  .hero .wrap{grid-template-columns:1fr;gap:32px}
+  .grid{grid-template-columns:1fr;gap:16px}
+  h2.title{position:static}
+  header.top{position:static}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Vzelita Hannisa</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#thesis">Thesis</a></li>
+        <li><a href="#publication">Publication</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <div class="me">
+          <img src="image/profile.jpg" alt="Portrait of Vzelita Hannisa" width="92" height="92">
+          <span>Sharia Financial Management Graduate</span>
+        </div>
+        <h1 id="hero-title">Ready to Join Your Finance and Accounting Team</h1>
+        <p class="lead">I’m Vzelita Hannisa, a Sharia Financial Management graduate with accounting experience at an insurance company and a commodity exporter. My thesis studied how an insurer’s capital and underwriting results relate to its profit, and I want to bring that care for numbers to your team.</p>
+        <div class="btns">
+          <a class="btn primary" href="#contact">Get in Touch</a>
+          <a class="btn ghost" href="cv.pdf">Download CV</a>
+        </div>
+      </div>
+
+      <div class="viewer" aria-labelledby="viewer-t">
+        <h2 id="viewer-t">From My Thesis: PT Asuransi Bhakti Bhayangkara, Yearly Averages 2020–2024</h2>
+        <figure>
+          <div class="stage"><img src="image/thesis-rbc.png" alt="Line chart of yearly average RBC: 421.93 in 2020, 361.94, 349.36, 353.15, 310.46 in 2024" width="520" height="230"></div>
+          <figcaption><strong>Risk-Based Capital (RBC)</strong>Fell from 421.93% in 2020 to 310.46% in 2024 (−26.4%), yet stayed far above the 120% regulatory minimum every year.</figcaption>
+        </figure>
+        <div class="thumbs" role="group" aria-label="Choose a chart">
+          <button type="button" aria-pressed="true" aria-label="Chart 1: RBC" data-src="image/thesis-rbc.png" data-alt="Line chart of yearly average RBC: 421.93 in 2020, 361.94, 349.36, 353.15, 310.46 in 2024" data-t="Risk-Based Capital (RBC)" data-c="Fell from 421.93% in 2020 to 310.46% in 2024 (−26.4%), yet stayed far above the 120% regulatory minimum every year."><img src="image/thesis-rbc.png" alt=""></button>
+          <button type="button" aria-pressed="false" aria-label="Chart 2: underwriting ratio" data-src="image/thesis-underwriting.png" data-alt="Line chart of yearly average underwriting ratio: 56.55 in 2020, 60.77, 49.93, 53.84, 57.79 in 2024" data-t="Underwriting Ratio" data-c="Dipped to 49.93% in 2022, then recovered to 57.79% in 2024. It stayed above the 40% minimum used in the thesis."><img src="image/thesis-underwriting.png" alt=""></button>
+          <button type="button" aria-pressed="false" aria-label="Chart 3: ROA" data-src="image/thesis-roa.png" data-alt="Line chart of yearly average ROA: 1.88 in 2020, 1.76, 1.14, 1.05, 0.79 in 2024" data-t="Return on Assets (ROA)" data-c="Fell every year, from 1.88% to 0.79%. This is the profit decline the thesis tries to explain."><img src="image/thesis-roa.png" alt=""></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about" aria-labelledby="about-t">
+    <div class="wrap grid">
+      <h2 class="title" id="about-t">About</h2>
+      <div>
+        <p>I graduated in Sharia Financial Management from UIN Sunan Gunung Djati Bandung. My hands-on work covers recording and verifying transactions, bank reconciliation, and financial reporting support. My research uses statistics to test how capital strength and underwriting performance relate to an insurer’s profitability.</p>
+        <p>I’m looking for a finance or accounting role where careful records and clear analysis matter. This portfolio shows the work behind that: internships, a thesis on an insurer’s financial performance, and certifications.</p>
+        <div class="stats">
+          <div class="stat gpa"><b>3.92</b><span>GPA out of 4.00</span></div>
+          <div class="stat"><b>860</b><span>Microsoft Excel (MOS) score</span></div>
+          <div class="stat"><b>100</b><span>OJK Sharia Finance Basic</span></div>
+          <div class="stat"><b>57.2%</b><span>ROA variation explained by my model</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience" aria-labelledby="exp-t">
+    <div class="wrap grid">
+      <h2 class="title" id="exp-t">Experience</h2>
+      <div>
+        <article class="entry">
+          <h3>Accounting Intern</h3>
+          <p class="meta">PT Asuransi Bhakti Bhayangkara | Jan – Feb 2025</p>
+          <ul>
+            <li>Recorded and verified monthly financial data for the head office and 5+ branch offices.</li>
+            <li>Calculated premium reserve accounts and prepared reconciliation reports covering premiums, claims, and technical reserves.</li>
+            <li>Processed 50+ claim payment vouchers to support financial reporting to OJK.</li>
+            <li>Performed 11 months of bank reconciliation to keep accounting records consistent with bank statements and support the audit process.</li>
+          </ul>
+          <figure class="photo">
+            <img src="image/abb-team.jpg" alt="Vzelita with the finance team at PT Asuransi Bhakti Bhayangkara" loading="lazy" width="1000" height="750">
+            <figcaption>With the team at PT Asuransi Bhakti Bhayangkara.</figcaption>
+          </figure>
+        </article>
+
+        <article class="entry">
+          <h3>Freelance Operations Support</h3>
+          <p class="meta">LSP Petalindo</p>
+          <ul>
+            <li>Supported the day-to-day running of the professional certification body, starting with official correspondence and letter administration.</li>
+            <li>Served as moderator in online certification assessment sessions, assisting the assessors.</li>
+          </ul>
+          <figure class="photo small">
+            <img src="image/lsp-petalindo.jpg.jpeg" alt="Vzelita during an online session with LSP Petalindo" loading="lazy" width="688" height="387">
+          </figure>
+        </article>
+
+        <article class="entry">
+          <h3>Community Service Workshop on MSME Digitalization</h3>
+          <p class="meta">Social &amp; Economic Division, KKN | 2025</p>
+          <ul>
+            <li>Initiated a QRIS and digital marketing workshop for 30+ participants from 50+ assisted MSMEs, in collaboration with Dinas Koperasi dan UKM and 3 KKN groups.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <h3>Accounting Intern</h3>
+          <p class="meta">PT Imela Jaya Bersama | 5 May – 7 Jul 2023</p>
+          <ul>
+            <li>Verified and recorded 400+ operational transactions (Direct Cost, Fixed Cost, Marketing Cost) with the corresponding general journal entries in Microsoft Excel.</li>
+            <li>Managed General Cash and Petty Cash records in parallel and checked supporting documents for each transaction.</li>
+          </ul>
+          <p style="margin-top:12px"><a href="image/imela-letter.jpg" target="_blank" rel="noopener">View internship confirmation letter (opens in a new tab)</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="thesis" aria-labelledby="th-t">
+    <div class="wrap grid">
+      <h2 class="title" id="th-t">Thesis Project</h2>
+      <div>
+        <article class="entry">
+          <h3>The Effect of Risk-Based Capital (RBC) and Underwriting Ratio on Return on Assets (ROA) at PT Asuransi Bhakti Bhayangkara (2020–2024)</h3>
+          <p class="meta">Undergraduate thesis | UIN Sunan Gunung Djati Bandung | May 2026 | Grade A</p>
+          <p>ROA at the insurer fell from 1.88% to 0.79% between 2020 and 2024 (charts at the top of this page). I tested whether two measures, capital strength and underwriting performance, explain its monthly profitability. The data are 60 monthly observations from the company’s financial reports.</p>
+          <ul>
+            <li><strong>RBC</strong> = solvency margin ÷ minimum required capital. The regulatory minimum is 120% (POJK 72/2016).</li>
+            <li><strong>Underwriting ratio</strong> = underwriting result ÷ net premium.</li>
+            <li><strong>ROA</strong> = net profit ÷ total assets.</li>
+          </ul>
+
+          <h4>Results</h4>
+          <div class="scroll"><table class="tbl">
+            <caption>Multiple linear regression, dependent variable: ROA (N = 60, SPSS)</caption>
+            <thead><tr><th>Variable</th><th>B</th><th>Std. error</th><th>Beta</th><th>t</th><th>Sig.</th></tr></thead>
+            <tbody>
+              <tr><td>Constant</td><td>−1.951</td><td>0.373</td><td>–</td><td>−5.229</td><td>&lt; 0.001</td></tr>
+              <tr><td>RBC</td><td>0.004</td><td>0.001</td><td>0.513</td><td>5.971</td><td>&lt; 0.001</td></tr>
+              <tr><td>Underwriting ratio</td><td>0.034</td><td>0.006</td><td>0.502</td><td>5.835</td><td>&lt; 0.001</td></tr>
+            </tbody>
+          </table></div>
+          <p class="note">R² 0.587 | Adjusted R² 0.572 | F(2, 57) = 40.476, p &lt; 0.001</p>
+          <ul>
+            <li>Both RBC and the underwriting ratio have a positive, significant effect on ROA. Stronger capital and better underwriting go with higher profitability.</li>
+            <li>Their standardized betas are close (0.513 and 0.502), so the two carry similar weight once their different scales are accounted for.</li>
+            <li>Together they explain 57.2% of ROA variation. The other 42.8% comes from factors outside the model, such as investment income.</li>
+            <li>This shows association within one company over five years. It does not prove cause.</li>
+          </ul>
+
+          <h4>Checks Behind the Model</h4>
+          <div class="scroll"><table class="tbl">
+            <thead><tr><th>Test</th><th>Tool</th><th>Result</th><th>Reading</th></tr></thead>
+            <tbody>
+              <tr><td>Stationarity (ADF)</td><td>Gretl</td><td>p = 0.002 (RBC), 0.046 (underwriting), 0.004 (ROA)</td><td>All three series are stationary at level.</td></tr>
+              <tr><td>Normality (Lilliefors)</td><td>SPSS</td><td>p = 0.068 after Box-Cox, λ = 0.70</td><td>Residuals are normal.</td></tr>
+              <tr><td>Multicollinearity</td><td>SPSS</td><td>VIF 1.020, tolerance 0.981</td><td>The two predictors do not overlap.</td></tr>
+              <tr><td>Autocorrelation (Durbin-Watson)</td><td>SPSS</td><td>1.664 (acceptable range 1.652 to 2.348)</td><td>No autocorrelation.</td></tr>
+              <tr><td>Heteroskedasticity (Glejser)</td><td>SPSS</td><td>p = 0.066 (RBC), 0.176 (underwriting)</td><td>Error variance is constant.</td></tr>
+            </tbody>
+          </table></div>
+
+          <h4>Range of the Monthly Data</h4>
+          <div class="scroll"><table class="tbl">
+            <thead><tr><th>Variable</th><th>Lowest month</th><th>Highest month</th><th>Mean</th><th>Std. dev.</th></tr></thead>
+            <tbody>
+              <tr><td>RBC (%)</td><td>249.63 (Nov 2022)</td><td>487.94 (Oct 2023)</td><td>359.37</td><td>53.03</td></tr>
+              <tr><td>Underwriting ratio (%)</td><td>42.10 (Jan 2023)</td><td>66.81 (Aug 2021)</td><td>55.78</td><td>5.77</td></tr>
+              <tr><td>ROA (%)</td><td>0.11 (Jan 2021)</td><td>3.20 (Dec 2020)</td><td>1.32</td><td>0.84</td></tr>
+            </tbody>
+          </table></div>
+
+          <h4>Islamic Business Ethics</h4>
+          <p>I interviewed the company’s actuary and its head of accounting. They described capital as protection for policyholders (amanah and justice), underwriting as fair, non-discriminatory pricing with honest claim handling, and profit as something to pursue within OJK rules. The company is conventional, so the study describes how its practices reflect these principles. It does not judge the Sharia compliance of its contracts.</p>
+          <p><strong>Limits:</strong> one company, five years, and no investment-income variable.</p>
+          <ul class="tags" aria-label="Methods and tools"><li>Risk-Based Capital</li><li>Underwriting ratio</li><li>Return on Assets</li><li>Multiple linear regression</li><li>Mixed methods</li><li>SPSS</li><li>Gretl</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="publication" aria-labelledby="pub-t">
+    <div class="wrap grid">
+      <h2 class="title" id="pub-t">Publication</h2>
+      <div>
+        <article class="entry">
+          <h3>A Comprehensive Analysis of Gender Disparities in Indonesian Human Development Using Machine Learning Techniques</h3>
+          <p class="meta">Second author | The 1st International Conference on Islamic Economics (ICIE), UIN K.H. Abdurrahman Wahid Pekalongan | September 2024</p>
+          <ul>
+            <li>Studied gender gaps in life expectancy, education, and spending across Indonesian regions, using 2023 Human Development Index data.</li>
+            <li>Used A/B testing, composite scoring, and K-Means clustering.</li>
+            <li>Main finding: 78.6% of regions rank “High” for men, against 13.4% for women, with the widest gaps in remote areas such as Papua.</li>
+          </ul>
+          <div class="pubviewer"><div class="viewer" aria-labelledby="viewer-t2">
+        <h2 id="viewer-t2">From My ICIE 2024 Paper: Gender Gaps in Human Development</h2>
+        <figure>
+          <div class="stage"><img src="image/icie-fig4.jpg" alt="Two donut charts: share of regions ranked High or Low in human development for men and for women" width="1181" height="609"></div>
+          <figcaption><strong>Regions Ranked “High”</strong>78.6% for men, but only 13.4% for women.</figcaption>
+        </figure>
+        <div class="thumbs" role="group" aria-label="Choose a chart">
+          <button type="button" aria-pressed="false" aria-label="Chart 1: life expectancy, schooling, spending" data-src="image/icie-fig1.jpg" data-alt="Violin plots comparing life expectancy, schooling, and spending for men and women" data-t="Four Indicators by Gender" data-c="Women live slightly longer. Men lead in schooling and spending."><img src="image/icie-fig1.jpg" alt=""></button>
+          <button type="button" aria-pressed="false" aria-label="Chart 2: combined score" data-src="image/icie-fig2.jpg" data-alt="Box plot of the combined development score for men and women" data-t="One Combined Score" data-c="All indicators merged into one score. Men’s middle value is a bit higher."><img src="image/icie-fig2.jpg" alt=""></button>
+          <button type="button" aria-pressed="false" aria-label="Chart 3: choosing the number of groups" data-src="image/icie-fig3.jpg" data-alt="Elbow, silhouette, and Calinski-Harabasz charts for choosing the number of clusters" data-t="Choosing the Groups" data-c="Three tests were used to decide how many groups to make. Two groups, High and Low, worked best."><img src="image/icie-fig3.jpg" alt=""></button>
+          <button type="button" aria-pressed="true" aria-label="Chart 4: High and Low regions" data-src="image/icie-fig4.jpg" data-alt="Two donut charts: share of regions ranked High or Low in human development for men and for women" data-t="Regions Ranked “High”" data-c="78.6% for men, but only 13.4% for women."><img src="image/icie-fig4.jpg" alt=""></button>
+          <button type="button" aria-pressed="false" aria-label="Chart 5: map of Indonesia" data-src="image/icie-fig5.jpg" data-alt="Maps of Indonesia showing High and Low human development regions for men and for women" data-t="Map of Indonesia" data-c="Dark blue means High. Far more regions are dark blue for men than for women."><img src="image/icie-fig5.jpg" alt=""></button>
+        </div>
+      </div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="certifications" aria-labelledby="cert-t">
+    <div class="wrap grid">
+      <h2 class="title" id="cert-t">Certifications and Training</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Microsoft Office Specialist: Excel 2016</h3>
+          <p class="meta">Microsoft | Score 860 | Feb 2025 – Feb 2030</p>
+          <p>Official certification.</p>
+        </div>
+        <div class="card">
+          <h3>Microsoft Office Specialist: Excel (training)</h3>
+          <p class="meta">PTIPD UIN Sunan Gunung Djati with Lumina Eka Optima | Oct – Dec 2024</p>
+          <p>Three intensive sessions on data processing, functions, and formulas.</p>
+        </div>
+        <div class="card">
+          <h3>Sharia Finance Basic</h3>
+          <p class="meta">Otoritas Jasa Keuangan (OJK) | Jun 2024 | Score 100</p>
+          <p>Self-paced financial literacy course on the OJK learning platform.</p>
+        </div>
+        <div class="card">
+          <h3>Corporate Financial Mastery</h3>
+          <p class="meta">SmartPath | Aug 2024</p>
+          <p>Corporate finance basics, financial accounting, and managerial finance.</p>
+        </div>
+        <div class="card">
+          <h3>Microsoft Excel Mastery for Finance</h3>
+          <p class="meta">SmartPath | Jul 2024</p>
+          <p>Excel for financial data and spreadsheets.</p>
+        </div>
+        <div class="card">
+          <h3>Introduction to Finance Accounting</h3>
+          <p class="meta">SmartPath | Jul 2024</p>
+          <p>Basic principles and concepts of financial accounting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="skills" aria-labelledby="sk-t">
+    <div class="wrap grid">
+      <h2 class="title" id="sk-t">Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Accounting</h3>
+          <ul><li>Bookkeeping and journal entries</li><li>Bank reconciliation</li><li>Accounts payable</li><li>Financial accounting</li><li>Financial administration</li><li>Budgeting and tax basics</li></ul>
+        </div>
+        <div>
+          <h3>Analysis</h3>
+          <ul><li>Financial analysis and reporting</li><li>Financial management</li><li>Multiple linear regression</li><li>K-Means clustering</li><li>A/B testing and composite scoring</li></ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul><li>Microsoft Excel, Word, PowerPoint</li><li>Google Workspace</li><li>SPSS, EViews, Gretl</li><li>Canva</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="education" aria-labelledby="ed-t">
+    <div class="wrap grid">
+      <h2 class="title" id="ed-t">Education</h2>
+      <div>
+        <article class="entry">
+          <h3>Bachelor of Sharia Financial Management</h3>
+          <p class="meta">UIN Sunan Gunung Djati Bandung | 2022 – 2026 | GPA 3.92 / 4.00</p>
+        </article>
+        <article class="entry">
+          <h3>Senior High School (Social Sciences)</h3>
+          <p class="meta">SMA IT Nurul Fajri, Bekasi | 2019 – 2022 | Final score 92 | Student council treasurer 2020–2021</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact" aria-labelledby="ct-t">
+    <div class="wrap grid">
+      <h2 class="title" id="ct-t">Contact</h2>
+      <div>
+        <p>I’d welcome the chance to talk about how I can support your finance and accounting team. The quickest way to reach me is by email.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:vzelitahannisa19@gmail.com">Send an Email</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/vzelitahannisa">LinkedIn Profile</a>
+          <a class="btn ghost" href="cv.pdf">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Vzelita Hannisa</span>
+    <span>Bekasi, Indonesia</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById("yr").textContent=new Date().getFullYear();
+document.querySelectorAll(".viewer").forEach(function(v){
+  var img=v.querySelector(".stage img"),cap=v.querySelector("figcaption");
+  var btns=v.querySelectorAll(".thumbs button");
+  btns.forEach(function(b){
+    b.addEventListener("click",function(){
+      btns.forEach(function(x){x.setAttribute("aria-pressed","false")});
+      b.setAttribute("aria-pressed","true");
+      img.src=b.dataset.src; img.alt=b.dataset.alt;
+      cap.innerHTML="";
+      var t=document.createElement("strong"); t.textContent=b.dataset.t;
+      cap.appendChild(t); cap.appendChild(document.createTextNode(b.dataset.c));
+    });
+  });
+});
+</script>
+</body>
+</html>
